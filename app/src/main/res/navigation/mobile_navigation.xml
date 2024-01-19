@@ -62,18 +62,13 @@
     <!-- TODO END STEP 4 -->
 
     <fragment
-        android:id="@+id/deeplink_dest"
-        android:name="com.example.lnu_assistant.DeepLinkFragment"
-        android:label="@string/deeplink"
-        tools:layout="@layout/deeplink_fragment">
-
-        <argument
-            android:name="myarg"
-            android:defaultValue="Android!"/>
-        <!-- TODO STEP 11.1 - Add a deep link to www.example.com/{myarg}/ -->
-
-        <!--<deepLink app:uri="www.example.com/{myarg}" />-->
-
-        <!-- TODO END STEP 11.1 -->
-    </fragment>
+        android:id="@+id/nav_news"
+        android:name="com.example.lnu_assistant.NewsFragment"
+        android:label="fragment_news_list"
+        tools:layout="@layout/fragment_news_list" />
+    <fragment
+        android:id="@+id/reviewTeacherFragment"
+        android:name="com.example.lnu_assistant.ReviewTeacherFragment"
+        android:label="fragment_review_teacher_list"
+        tools:layout="@layout/fragment_review_teacher_list" />
 </navigation>

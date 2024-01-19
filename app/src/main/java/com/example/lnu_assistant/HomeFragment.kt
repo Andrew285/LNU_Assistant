@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
-import com.example.lnu_assistant.R
 
 /**
  * Fragment used to show how to navigate to another destination
@@ -54,6 +53,6 @@ class HomeFragment : Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.main_menu, menu)
+        inflater.inflate(R.menu.search_menu, menu)
     }
 }
