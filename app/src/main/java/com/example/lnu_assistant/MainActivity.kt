@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return super.onOptionsItemSelected(item)
+//        return super.onOptionsItemSelected(item)
         // TODO STEP 9.2 - Have Navigation UI Handle the item selection - make sure to delete
         //  the old return statement above
 //        // Have the NavigationUI look for an action or destination matching the menu
