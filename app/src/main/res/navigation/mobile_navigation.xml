@@ -18,6 +18,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_dest_to_nav_news"
+            app:destination="@id/nav_news" />
         <!-- TODO END STEP 7.1 -->
 
     </fragment>
@@ -63,12 +66,22 @@
 
     <fragment
         android:id="@+id/nav_news"
-        android:name="com.example.lnu_assistant.NewsFragment"
+        android:name="com.example.lnu_assistant.news.NewsFragment"
         android:label="fragment_news_list"
-        tools:layout="@layout/fragment_news_list" />
+        tools:layout="@layout/fragment_news_list" >
+        <action
+            android:id="@+id/action_nav_news_to_addNewsFragment"
+            app:destination="@id/addNewsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/reviewTeacherFragment"
         android:name="com.example.lnu_assistant.ReviewTeacherFragment"
         android:label="fragment_review_teacher_list"
         tools:layout="@layout/fragment_review_teacher_list" />
+    <fragment
+        android:id="@+id/addNewsFragment"
+        android:name="com.example.lnu_assistant.news.AddNewsFragment"
+        android:label="AddNewsFragment"
+        tools:layout="@layout/fragment_add_news">
+    </fragment>
 </navigation>
