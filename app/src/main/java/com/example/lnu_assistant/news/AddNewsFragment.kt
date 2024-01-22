@@ -14,16 +14,11 @@ import androidx.databinding.DataBindingUtil
 import com.example.lnu_assistant.R
 import com.example.lnu_assistant.databinding.FragmentAddNewsBinding
 import com.google.firebase.Timestamp
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import java.util.Date
-import java.util.concurrent.TimeUnit
 
 class AddNewsFragment : Fragment() {
 

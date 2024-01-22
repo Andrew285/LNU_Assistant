@@ -3,7 +3,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/home_dest">
+    app:startDestination="@id/home_dest">
     <fragment
         android:id="@+id/home_dest"
         android:name="com.example.lnu_assistant.HomeFragment"
@@ -19,8 +19,8 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
         <action
-            android:id="@+id/action_home_dest_to_nav_news"
-            app:destination="@id/nav_news" />
+            android:id="@+id/action_home_dest_to_reviewTeacherFragment"
+            app:destination="@id/reviewTeacherFragment" />
         <!-- TODO END STEP 7.1 -->
 
     </fragment>
@@ -65,23 +65,23 @@
     <!-- TODO END STEP 4 -->
 
     <fragment
-        android:id="@+id/nav_news"
-        android:name="com.example.lnu_assistant.news.NewsFragment"
-        android:label="fragment_news_list"
-        tools:layout="@layout/fragment_news_list" >
-        <action
-            android:id="@+id/action_nav_news_to_addNewsFragment"
-            app:destination="@id/addNewsFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/reviewTeacherFragment"
         android:name="com.example.lnu_assistant.ReviewTeacherFragment"
         android:label="fragment_review_teacher_list"
-        tools:layout="@layout/fragment_review_teacher_list" />
+        tools:layout="@layout/fragment_review_teacher_list">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.lnu_assistant.news.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_addNewsFragment"
+            app:destination="@id/addNewsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addNewsFragment"
         android:name="com.example.lnu_assistant.news.AddNewsFragment"
-        android:label="AddNewsFragment"
-        tools:layout="@layout/fragment_add_news">
-    </fragment>
+        android:label="fragment_add_news"
+        tools:layout="@layout/fragment_add_news" />
 </navigation>

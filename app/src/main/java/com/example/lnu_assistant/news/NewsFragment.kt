@@ -1,62 +1,52 @@
 package com.example.lnu_assistant.news
 
-import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.lnu_assistant.R
-import com.example.lnu_assistant.databinding.FragmentNewsListBinding
+import com.example.lnu_assistant.databinding.FragmentNewsBinding
 import com.google.firebase.Timestamp
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 
 class NewsFragment : Fragment() {
 
-    private lateinit var binding: FragmentNewsListBinding
+    private lateinit var binding: FragmentNewsBinding
 
     //Firebase Reference
 //    lateinit var firebaseAuth: FirebaseAuth
 //    lateinit var firebaseUser: FirebaseUser
     var db = FirebaseFirestore.getInstance()
-    lateinit var imageView: ImageView
     lateinit var storageReference: StorageReference
     var collectionReference: CollectionReference = db.collection("Journal")
 
     lateinit var newsList: MutableList<News>
     lateinit var newsAdapter: NewsAdapter
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-        ): View? {
+    ): View? {
 
-        binding = FragmentNewsListBinding.inflate(inflater, container, false)
+        binding = FragmentNewsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-//        imageView = requireActivity().findViewById(R.id.thumbnail_image_card)
-
-        // Inflate the layout for this fragment
-        binding = DataBindingUtil.setContentView(requireActivity(), R.layout.fragment_news_list)
 
 //        //Firebase
 //        firebaseAuth = Firebase.auth
@@ -65,17 +55,17 @@ class NewsFragment : Fragment() {
         //RecyclerView
         binding.recyclerView.setHasFixedSize(true)
         binding.recyclerView.layoutManager =
-            LinearLayoutManager(requireContext())
+            LinearLayoutManager(requireActivity())
 
         binding.fab.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_news_to_addNewsFragment)
+            findNavController().navigate(R.id.action_newsFragment_to_addNewsFragment)
         }
 
         // Posts arraylist
         newsList = arrayListOf()
 
 
-        newsAdapter = NewsAdapter(requireContext(), newsList)
+        newsAdapter = NewsAdapter(requireActivity(), newsList)
         binding.recyclerView.adapter = newsAdapter
     }
 

@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
         val navController = host.navController
 
         appBarConfiguration = AppBarConfiguration(navController.graph)
+        findViewById<NavigationView>(R.id.nav_view).setItemIconTintList(null);
 
         // TODO STEP 9.5 - Create an AppBarConfiguration with the correct top-level destinations
 //        // You should also remove the old appBarConfiguration setup above
