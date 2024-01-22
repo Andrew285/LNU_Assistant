@@ -55,14 +55,14 @@ class MainActivity : AppCompatActivity() {
         // Set up Action Bar
         val navController = host.navController
 
-//        appBarConfiguration = AppBarConfiguration(navController.graph)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
 
         // TODO STEP 9.5 - Create an AppBarConfiguration with the correct top-level destinations
-        // You should also remove the old appBarConfiguration setup above
-        val drawerLayout : DrawerLayout? = findViewById(R.id.drawer_layout)
-        appBarConfiguration = AppBarConfiguration(
-                setOf(R.id.nav_news, R.id.nav_feedback),
-                drawerLayout)
+//        // You should also remove the old appBarConfiguration setup above
+//        val drawerLayout : DrawerLayout? = findViewById(R.id.drawer_layout)
+//        appBarConfiguration = AppBarConfiguration(
+//                setOf(R.id.nav_news, R.id.nav_feedback),
+//                drawerLayout)
         // TODO END STEP 9.5
 
         setupActionBar(navController, appBarConfiguration)
@@ -103,14 +103,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        return super.onOptionsItemSelected(item)
+        return super.onOptionsItemSelected(item)
         // TODO STEP 9.2 - Have Navigation UI Handle the item selection - make sure to delete
         //  the old return statement above
 //        // Have the NavigationUI look for an action or destination matching the menu
 //        // item id and navigate there if found.
 //        // Otherwise, bubble up to the parent.
-        return item.onNavDestinationSelected(findNavController(R.id.my_nav_host_fragment))
-                || super.onOptionsItemSelected(item)
+//        return item.onNavDestinationSelected(findNavController(R.id.my_nav_host_fragment))
+//                || super.onOptionsItemSelected(item)
         // TODO END STEP 9.2
     }
 
