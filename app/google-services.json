@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "645994433349",
+    "project_id": "lnu-assistant",
+    "storage_bucket": "lnu-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645994433349:android:4b834e0c9d6aca844acc2c",
+        "android_client_info": {
+          "package_name": "com.example.lnu_assistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRTklTtnRCMfW9CkpWjYEbbiqRlnXTafc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
