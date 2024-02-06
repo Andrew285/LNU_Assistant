@@ -1,20 +1,18 @@
-package com.example.lnu_assistant
+package com.example.lnu_assistant.views
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.example.lnu_assistant.databinding.FragmentReviewTeacherBinding
-
-import com.example.lnu_assistant.placeholder.PlaceholderContent.PlaceholderItem
+import com.example.lnu_assistant.placeholder.PlaceholderContent
 
 /**
  * [RecyclerView.Adapter] that can display a [PlaceholderItem].
  * TODO: Replace the implementation with code for your data type.
  */
 class ReviewTeacherRecyclerViewAdapter(
-    private val values: List<PlaceholderItem>
+    private val values: List<PlaceholderContent.PlaceholderItem>
 ) : RecyclerView.Adapter<ReviewTeacherRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

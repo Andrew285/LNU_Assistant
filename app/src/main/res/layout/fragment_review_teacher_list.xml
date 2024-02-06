@@ -28,7 +28,7 @@
             app:layout_constraintVertical_bias="1.0"
             tools:layout_editor_absoluteX="0dp"
             app:layoutManager="LinearLayoutManager"
-            tools:context=".ReviewTeacherFragment"
+            tools:context=".views.ReviewTeacherFragment"
             tools:listitem="@layout/fragment_review_teacher" />
 
     </androidx.core.widget.NestedScrollView>

@@ -1,24 +1,25 @@
-package com.example.lnu_assistant.news
+package com.example.lnu_assistant.views
 
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.Toast
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.lnu_assistant.R
 import com.example.lnu_assistant.databinding.FragmentNewsBinding
+import com.example.lnu_assistant.model.News
+import com.example.lnu_assistant.views.adapters.NewsAdapter
+import com.example.lnu_assistant.views.interfaces.IFragmentNavigator
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.StorageReference
 
-class NewsFragment : Fragment() {
+class NewsFragment : Fragment(), IFragmentNavigator {
 
     private lateinit var binding: FragmentNewsBinding
 
@@ -32,9 +33,9 @@ class NewsFragment : Fragment() {
     lateinit var newsList: MutableList<News>
     lateinit var newsAdapter: NewsAdapter
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -103,5 +104,9 @@ class NewsFragment : Fragment() {
             .addOnFailureListener{
                 Toast.makeText(requireContext(), "Something went wrong", Toast.LENGTH_SHORT).show()
             }
+    }
+
+    override fun title(): String {
+        return getString(R.string.toolbar_newsFragment)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.lnu_assistant
+package com.example.lnu_assistant.views
 
 import android.os.Bundle
 import android.view.LayoutInflater

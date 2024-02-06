@@ -1,4 +1,4 @@
-package com.example.lnu_assistant.news
+package com.example.lnu_assistant.model
 
 import com.google.firebase.Timestamp
 

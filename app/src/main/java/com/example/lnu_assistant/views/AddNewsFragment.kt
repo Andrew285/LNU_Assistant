@@ -1,4 +1,4 @@
-package com.example.lnu_assistant.news
+package com.example.lnu_assistant.views
 
 import android.app.Activity
 import android.content.Intent
@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.lnu_assistant.R
 import com.example.lnu_assistant.databinding.FragmentAddNewsBinding
+import com.example.lnu_assistant.model.News
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
