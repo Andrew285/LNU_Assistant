@@ -1,4 +1,4 @@
-package com.example.lnu_assistant.news
+package com.example.lnu_assistant.views.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.lnu_assistant.databinding.FragmentNewsItemBinding
+import com.example.lnu_assistant.model.News
 
 class NewsAdapter(var context: Context, private var newsList: List<News>):
     RecyclerView.Adapter<NewsAdapter.MyViewHolder>() {

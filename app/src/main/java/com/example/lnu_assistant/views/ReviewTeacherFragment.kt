@@ -1,13 +1,14 @@
-package com.example.lnu_assistant
+package com.example.lnu_assistant.views
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import com.example.lnu_assistant.R
 import com.example.lnu_assistant.placeholder.PlaceholderContent
 
 /**

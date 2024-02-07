@@ -1,15 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (C) 2018 The Android Open Source Project
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~      http://www.apache.org/licenses/LICENSE-2.0
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Navigation codelab</string>
 
@@ -32,6 +21,86 @@
     <string name="send_deep_link_notification_button">Send deep link notification</string>
 
 
+<!--    <string name="app_name">Free Will</string>-->
+    <string name="no_account">Я ще не маю акаунта.\n<b><u>Зареєструватись</u></b></string>
+    <string name="setting">Налаштування</string>
+    <string name="group">Група</string>
+    <string name="login">Ім\'я</string>
+    <string name="gmail">Електронна пошта</string>
+    <string name="password">Пароль</string>
+    <string name="confirm">Підтвердити</string>
+    <string name="confirm_info"><b>Вітаємо! </b><b>Натисніть кнопку <font color="#00b4d8">
+        Надіслати</font> і на Вашу електронну пошту  буде надісланий лист з посиланням.
+        Перейдіть за ним, щоб підтвердити Вашу електронну пошту.</b></string>
+    <string name="personal_data">Особисті дані</string>
+    <string name="general_setting">Загальні налаштування</string>
+    <string name="change">Змінити</string>
+    <string name="sound">Сповіщення\nзвук</string>
+    <string name="language">Мова</string>
+    <string name="type_words">Розмір шрифту</string>
+    <string name="on">Увімкнуто</string>
+    <string name="off">Вимкнуто</string>
+    <string name="vibro">Вібро</string>
+    <string name="Ukraine">Солов\'їна</string>
+    <string name="English">English</string>
+    <string name="Big">B</string>
+    <string name="Medium">C</string>
+    <string name="Small">M</string>
+    <string name="five_minute">за 5 хв</string>
+    <string name="ten_minute">за 10 хв</string>
+    <string name="fifteen_minute">за 15 хв</string>
+    <string name="twelve_minute">за 20 хв</string>
+    <string name="remember">нагадати</string>
+    <string name="send">Надіслати</string>
+    <string name="from">Від</string>
+    <string name="to">До</string>
+    <string name="search">Пошук</string>
+    <string name="info">Інформація</string>
+    <string name="room_not_exists">Кімнати з таким номером немає!</string>
+
+    <!--    authentication part-->
+    <string name="choose_page">Ласкаво просимо</string>
+    <string name="choose_page_btn1">Студент</string>
+    <string name="choose_page_btn2">Гість</string>
+    <string name="welcome_page_1">Львівський національний університет імені Івана Франка</string>
+    <string name="welcome_page_2">студентами для студентів</string>
+    <string name="entrance_1">Вхід</string>
+    <string name="entrance_login">Логін</string>
+    <string name="entrance_password">Пароль</string>
+    <string name="entrance_btn">Увійти</string>
+    <string name="entrance_without">Увійти без авторизації</string>
+    <string name="entrance_no_account">Я ще не маю акаунта</string>
+    <string name="entrance_registration">Зареєструватись</string>
+    <string name="registration">Реєстрація</string>
+    <string name="forget_pass">Забули пароль?</string>
+    <string name="schedule_btn">Змінити</string>
+    <string name="check_entrance"><b>На Вашу пошту був надісланий лист для входу. Скористайтесь ним, щоб увійти.</b>
+    <b>Змінити свій пароль Ви можете в Налаштуваннях.</b></string>
+    <string name="check_registr"><b>На Вашу пошту був надісланий лист для підтвердження. Перейдіть, будь ласка, за посиланням щоб завершити вхід.</b>
+    <b>Вже очікуємо на Вас!</b></string>
+    <string name="agree">Підтвердити</string>
+    <string name="exit">Вийти</string>
+    <string name="enter_password">Введіть пароль</string>
+    <string name="you_exit">Ви вийшли</string>
+    <string name="you_agree">Зміни підтверджено</string>
+    <string name="reset_password">Скинути пароль</string>
+    <string name="alarm">Alarm!!!</string>
+    <string name="rest_five">Пара через 5 хвилин</string>
+    <string name="rest_ten">Пара через 10 хвилин</string>
+    <string name="rest_fifteen">Пара через 15 хвилин</string>
+    <string name="rest_twelve">Пара через 20 хвилин</string>
+    <string name="information_about_teacher">Інформація про викладача</string>
+
+
+    <string name="subject">Предмет</string>
+    <string name="audience">ауд.</string>
+    <string name="edit_schedule_mon">пн</string>
+    <string name="edit_schedule_tue">вт</string>
+    <string name="edit_schedule_wen">ср</string>
+    <string name="edit_schedule_thu">чт</string>
+    <string name="edit_schedule_fri">пт</string>
+    <string name="edit_schedule_plus">+</string>
+
     <!--    navigation_drawer-->
     <string name="open"> Open </string>
     <string name="close"> Close </string>
@@ -44,6 +113,8 @@
     <string name="toolbar_change_schedule">Зміна розкладу</string>
     <string name="log_out_alert">Ви справді бажаєте вийти з акаунта?</string>
     <string name="alert_header">Попередження</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
 
     <string name="links_preview">Оберіть предмет</string>
 
@@ -52,11 +123,25 @@
     <string name="demanding">вимогливість</string>
     <string name="loyalty">лояльність</string>
     <string name="teaching_skills">викладання</string>
-    <string name="search">Пошук</string>
 
-    <!-- Content description of the image -->
-    <string name="image_des">Image</string>
-    <string name="image_des_ic_share">Share</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="zero_stars">0/5</string>
+    <string name="department_name">Назва факультету</string>
+    <string name="full_name">Прізвище Ім\'я Побатькові</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="add_feedback">Додати відгук</string>
+    <string name="teachers_not_found">Таких викладачів не знайдено</string>
+    <string name="write_feedback">Опишіть детальніше ваші враження…(не обов\'язково)</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Зареєструватись</string>
+    <string name="image_des">Description</string>
+    <string name="image_des_ic_share">icon_description</string>
+
+    <string name="toolbar_sign_in_fragment">Sign In</string>
+    <string name="toolbar_homeFragment">Home</string>
+    <string name="toolbar_newsFragment">News</string>
+    <string name="toolbar_sign_up_fragment">Sign Up</string>
 </resources>

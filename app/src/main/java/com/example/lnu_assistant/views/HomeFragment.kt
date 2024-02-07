@@ -1,21 +1,27 @@
-package com.example.lnu_assistant
+package com.example.lnu_assistant.views
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
+import com.example.lnu_assistant.R
+import com.example.lnu_assistant.views.interfaces.IFragmentNavigator
 
 /**
  * Fragment used to show how to navigate to another destination
  */
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), IFragmentNavigator {
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         setHasOptionsMenu(true)
         return inflater.inflate(R.layout.home_fragment, container, false)
@@ -47,12 +53,16 @@ class HomeFragment : Fragment() {
 
         //TODO STEP 7.2 - Update the OnClickListener to navigate using an action
         view.findViewById<Button>(R.id.navigate_action_button)?.setOnClickListener(
-                Navigation.createNavigateOnClickListener(R.id.next_action, null)
+            Navigation.createNavigateOnClickListener(R.id.next_action, null)
         )
         //TODO END STEP 7.2
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.search_menu, menu)
+    }
+
+    override fun title(): String {
+        return getString(R.string.toolbar_homeFragment)
     }
 }

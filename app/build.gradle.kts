@@ -66,8 +66,13 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-storage")
-//    implementation("com.firebaseui:firebase-ui-storage:4.3.2")
 
-// Find the latest Glide releases here: https://goo.gl/LpksbR
+    // Glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    // ViewModel
+    val lifecycle_version = "2.7.0"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
 }
